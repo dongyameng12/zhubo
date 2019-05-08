@@ -1,0 +1,1016 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "方正汉真广标";
+  src: url("../font/方正汉真广标.woff2") format("woff2"),
+       url("../font/方正汉真广标.woff") format("woff"),
+       url("../font/方正汉真广标.ttf") format("truetype"),
+       url("../font/方正汉真广标.eot") format("embedded-opentype"),
+       url("../font/方正汉真广标.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html,body{
+    // font-size: 58.5938px;
+        width: 100%;
+        height: 100%;
+        background: url('../images/qita_bg.png') no-repeat;
+        background-size: cover;
+        font-family: '微软雅黑';
+        // 兑换码
+        section.recode{
+            // display: none;
+            width: 100%;
+            min-height: 100%;
+            background: #ff7b8c;
+            box-sizing: border-box;
+            >div{
+                &:nth-child(1){
+                    width:7.5rem;
+                    height:4.6rem;
+                    background: url('../images/code_01.png') no-repeat;
+                    background-size: cover;
+                    margin: 0 auto;
+                }
+                &:nth-child(2){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    >div{
+                            width: 6.39rem;
+                            height: 1.13rem;
+                            box-sizing: border-box;
+                            border: solid .02rem #ff4242;
+                            border-radius: .65rem;
+                            background-color: #fff;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            padding: 0 .45rem;
+                            margin: .2rem auto 0;
+                            width: 6.39rem;
+                            >p{
+                                font-size: .27rem;
+                                width: 1.05rem;
+                                height: .79rem;
+                                line-height: .79rem;
+                                border-right: solid .02rem #ff639c;
+                                color: #ff639c;
+                                text-align: center;
+                                padding-right: .22rem;
+                                box-sizing: border-box;
+                            }
+                            >input{
+                                flex: 1;
+                                height: .79rem;
+                                border: 0;
+                                padding-left: .1rem;
+                                box-sizing: border-box;
+                            }
+                    }
+                    >p{
+                        width: 6.17rem;
+                        height: .72rem;
+                        line-height: .72rem;
+                        color: #ff4242;
+                    }
+                    >a{
+                       display: inline-block;
+                       width: 6.39rem;
+                       height: 1.13rem;
+                       background: url('../images/code_02.png') no-repeat;
+                       background-size: cover; 
+                    }
+                }
+                &:nth-child(3){
+                    width: 5.66rem;
+                    height: 2.56rem;
+                    background: url('../images/d_01.png') no-repeat;
+                    background-size: cover;
+                    margin: .45rem auto;
+                    position: relative;
+                    >div{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        top: .54rem;
+                        width: 5.45rem;
+                        height: 1.84rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        >ul{
+                            width: 4.8rem;
+                            height: 1.5rem;
+                            font-size: .26rem;
+                            color: #fff;
+                            overflow-y: scroll;
+                            >li{
+                                line-height: .5rem;
+                                text-align: justify;
+                                text-align-last: justify;
+                            }
+                            
+                        }
+                    }
+                }
+                &:nth-child(4){
+                    width: 5.66rem;
+                    margin: 0 auto;
+                    display: flex;
+                    >div{
+                        &:nth-child(1){
+                            width: 90px;
+                            height: 90px;
+                            border: solid 3.5px #ef8938;
+                            margin-right: .32rem;
+                        }
+                        &:nth-child(2){
+                            width: 2rem;
+                            height:1.36rem;
+                            background: url('../images/d_02.png') no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+        section.lottery{
+            display: none;
+            min-height: 100%;
+            width: 7.5rem;
+            background: url('../images/turn_bg.png') no-repeat;
+            background-size: cover;
+           
+            >div{
+                &:nth-child(1){
+                    width: 7.5rem;
+                    height: 3.6rem;
+                    background: url('../images/turn_01.png') no-repeat;
+                    background-size: cover; 
+                }
+                &:nth-child(2){
+                    width: 7.5rem;
+                    height:8rem;
+                    background: url('../images/turn_02.png') no-repeat;
+                    background-size: cover; 
+                    >div{
+                        margin: 0 auto;
+                        &:nth-child(1){
+                            width: 6.10rem;
+                            display: flex;
+                            justify-content: space-between;
+                            padding-top: .07rem;
+                            >a{
+                                display: inline-block;
+                                width:2.78rem;
+                                height:.96rem;
+                                background: url('../images/change.png') no-repeat;
+                                background-size: cover; 
+                                font-size: .28rem;
+                                color: #fff;
+                                font-family: "方正汉真广标";
+                                text-align: center;
+                                line-height: .91rem;
+                                text-shadow: 2px 2px 9px rgba(252, 140, 116,.67);
+                                &:nth-child(1){
+                                    letter-spacing: .08rem;
+                                }
+                                &:nth-child(2){
+                                    >span{
+                                        margin-right: .1rem;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            position: relative;
+                            >div{
+                                &:nth-child(1){
+                                    width: 6.42rem;
+                                    height:5.48rem;
+                                    background: url('../images/turntable-bg.png') no-repeat;
+                                    background-size: cover;
+                                    margin: 0 auto;   
+                                }
+                                &:nth-child(2){
+                                    width:1.93rem;
+                                    height: 1.93rem;
+                                    position: absolute;
+                                    margin: auto;
+                                    top: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    left: 0;
+                                    z-index: 10;
+                                    text-align: center;
+                                    >img{
+                                        &:nth-child(1){
+                                            width:.75rem;
+                                            position: absolute;
+                                            left: 0;
+                                            right: 0;
+                                            margin: auto;
+                                            top:0.7rem;
+                                            z-index: 10;
+                                        } 
+                                        &:nth-child(2){
+                                            width:1.54rem;
+                                            position: absolute;
+                                            left: 0;
+                                            right: 0;
+                                            margin: auto;
+                                            top: 0;
+                                            bottom: 0;
+                                        } 
+                                    }
+                                   
+                                }
+                              
+                            }
+                        }
+                        &:nth-child(3){
+                            width: 6.1rem;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: .25rem;
+                            >a{
+                                display: inline-block;
+                                width: 3.11rem;
+                                height: 1.32rem;
+                                &:nth-child(1){
+                                    background: url('../images/my.png') no-repeat;
+                                    background-size: cover;
+                                }
+                                &:nth-child(2){
+                                    background: url('../images/tallfriend.png') no-repeat;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+              
+                &:nth-child(3){
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    height: 2.98rem;
+                    >div{
+                        &:nth-child(1){
+                            width:90px;
+                            height: 90px;
+                            border: solid 3.5px #ef8938;
+                            // box-sizing: border-box;
+                            margin-right: .32rem;
+                        }
+                        &:nth-child(2){
+                            width:4.41rem;
+                            height: 1.82rem;
+                            background: url('../images/zhubo.png') no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+              
+        }
+        section.gift{
+            display: none;
+            padding-bottom: .63rem;
+            >div{
+                &:nth-child(1){
+                    width: 7.5rem;
+                    height: 1.5rem;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    padding: .66rem 0 .12rem;
+                    box-sizing: border-box;
+                    >span{
+                        display: inline-block;
+                        width: 3.90rem;
+                        height: 1.01rem;
+                        background: url('../images/my_title.png') no-repeat;
+                        background-size: cover;
+                    }
+                   
+                }
+                &:nth-child(2){
+                    width: 7.5rem;
+                    height: 12.11rem;
+                    background: url('../images/my_01.png') no-repeat;
+                    background-size: cover;
+                    position: relative;                    
+                    >div{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: .2rem;
+                        margin: auto;
+                        width: 6.29rem;
+                        height: 10.4rem;
+                        margin: 0 auto;
+                        border-radius: .6rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        >ul{
+                            height: 9.8rem;
+                            overflow-y: scroll;
+                            >li{
+                                // 京东
+                                &.jingdong{
+                                        width:5.8rem;
+                                        height:2.41rem;
+                                        background: url('../images/li_01.png') no-repeat;
+                                        background-size: cover;
+                                        position: relative;
+                                        >div{
+                                            &:nth-child(1){
+                                                position: absolute;
+                                                left: .35rem;
+                                                top: .52rem;
+                                                height: 1.33rem;
+                                                word-wrap: break-word; 
+                                                color: #fff;
+                                                font-size: .36rem;
+                                                text-shadow:0px 3px 3px rgba(220, 104, 125, .35);
+                                                writing-mode: vertical-lr;
+                                                text-align: justify;
+                                                text-align-last: justify;
+                                            }
+                                            &:nth-child(2){
+                                                position: absolute;
+                                                left: 1.54rem;
+                                                top: 0;
+                                                bottom: 0;
+                                                margin: auto;
+                                                width: 3.49rem;
+                                                height: 1.61rem;
+                                                font-size: .2rem;
+                                                color: #ff4a6a;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content:space-between;
+                                                >p{
+                                                    &:nth-child(1){
+                                                        font-size: .43rem;
+                                                        font-family: "方正汉真广标";
+                                                    }
+                                                }
+                                            }
+                                            
+                                        
+                                        } 
+                                        >a{
+                                            display: inline-block;
+                                            position: absolute;
+                                            right: .2rem;
+                                            bottom: .36rem;
+                                            width: 1.16rem;
+                                            height: .57rem;
+                                            background: url('../images/decoration_01.png') no-repeat;
+                                            background-size: cover;
+                                            z-index: 10;
+                                        }
+                                }
+                                // 影票
+                                &.yingpiao{
+                                    width:5.85rem;
+                                    height:2.46rem;
+                                    background: url('../images/li_02.png') no-repeat;
+                                    background-size: cover;
+                                     position: relative;
+                                    >div{
+                                        &:nth-child(1){
+                                            position: absolute;
+                                            left: .35rem;
+                                            top: .52rem;
+                                            height: 1.33rem;
+                                            word-wrap: break-word; 
+                                            color: #fff;
+                                            font-size: .36rem;
+                                            text-shadow:0px 3px 3px rgba(39, 150, 21, .35);    
+                                            text-align: justify;
+                                            text-align-last: justify;
+                                            writing-mode: vertical-lr;
+                                        }
+                                        &:nth-child(2){
+                                            position: absolute;
+                                            left: 1.53rem;
+                                            top: .44rem;
+                                            width: 3.48rem;
+                                            height: 1.54rem;
+                                            font-size: .2rem;
+                                            color: #62a8f4;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            >p{
+                                                &:nth-child(1){
+                                                    font-size: .43rem;
+                                                    font-family: "方正汉真广标";
+                                                }
+                                            }
+                                        }
+                                   
+                                       
+                                    } 
+                                    >a{
+                                        display: inline-block;
+                                        position: absolute;
+                                        right: .2rem;
+                                        bottom: .36rem;
+                                        width: 1.16rem;
+                                        height: .57rem;
+                                        background: url('../images/decoration_02.png') no-repeat;
+                                        background-size: cover;
+                                        z-index: 10;
+                                    }
+                                }
+                                // 视频
+                                &.shipin{
+                                    width:5.79rem;
+                                    height:2.43rem;
+                                    background: url('../images/li_03.png') no-repeat;
+                                    background-size: cover;
+                                     position: relative;
+                                    >div{
+                                        &:nth-child(1){
+                                            position: absolute;
+                                            left: .35rem;
+                                            top: .52rem;
+                                            height: 1.33rem;
+                                            word-wrap: break-word; 
+                                            color: #fff;
+                                            font-size: .36rem;
+                                            text-shadow:0px 3px 3px rgba(251, 140, 95, .42);    
+                                            text-align: justify;
+                                            text-align-last: justify;
+                                            writing-mode: vertical-lr;
+                                        }
+                                        &:nth-child(2){
+                                            position: absolute;
+                                            left: 1.53rem;
+                                            top: .44rem;
+                                            width: 3.48rem;
+                                            height: 1.54rem;
+                                            font-size: .2rem;
+                                            color: #ff9d4f;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            >p{
+                                                &:nth-child(1){
+                                                    font-size: .43rem;
+                                                    font-family: "方正汉真广标";
+                                                }
+                                            }
+                                        }
+                                   
+                                       
+                                    } 
+                                    >a{
+                                        display: inline-block;
+                                        position: absolute;
+                                        right: .2rem;
+                                        bottom: .36rem;
+                                        width: 1.16rem;
+                                        height: .57rem;
+                                        background: url('../images/decoration_03.png') no-repeat;
+                                        background-size: cover;
+                                        z-index: 10;
+                                    } 
+                                }
+                                // 话费
+                                &.huafei{
+                                    width:5.82rem;
+                                    height:2.45rem;
+                                    background: url('../images/li_04.png') no-repeat;
+                                    background-size: cover;
+                                    position: relative;
+                                    >div{
+                                        &:nth-child(1){
+                                            position: absolute;
+                                            left: .35rem;
+                                            top: .52rem;
+                                            height: 1.33rem;
+                                            word-wrap: break-word; 
+                                            color: #fff;
+                                            font-size: .36rem;
+                                            text-shadow:0px 3px 3px rgba(220, 104, 125, .35);
+                                            writing-mode: vertical-lr;
+                                            text-align: justify;
+                                            text-align-last: justify;
+                                        }
+                                        &:nth-child(2){
+                                            width: 3.5rem;
+                                            height: 1.4rem;
+                                            position: absolute;
+                                            top: .44rem;
+                                            left: 1.7rem;
+                                            color: #f55d78;
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-end;
+                                            justify-content: space-between;
+                                            >p{
+                                              &:nth-child(1){
+                                                font-weight: bolder;
+                                                >span{
+                                                    &:nth-child(1){
+                                                        font-size: .91rem;
+                                                    }
+                                                    &:nth-child(2){
+                                                        font-size: .46rem;
+                                                        margin: 0 .3rem 0 0;
+                                                    }
+                                                    &:nth-child(3){
+                                                        font-size: .3rem;
+
+                                                    }
+                                                }
+                                              }
+                                              &:nth-child(2){
+                                                    width: 2.58rem;
+                                                    font-size: .2rem;
+                                                    width: 2.54rem;
+                                                    text-align: right;
+                                                }  
+                                            }
+                                        }
+                                       
+                                    }
+                                 
+                                }
+                               
+                                // 第二版
+                                &.jingdong2{
+                                    width:5.8rem;
+                                    height:2.41rem;
+                                    background: url('../images/li_01.png') no-repeat;
+                                    background-size: cover;
+                                    position: relative;
+                                    >div{
+                                        &:nth-child(1){
+                                            position: absolute;
+                                            left: .35rem;
+                                            top: .52rem;
+                                            height: 1.33rem;
+                                            word-wrap: break-word; 
+                                            color: #fff;
+                                            font-size: .36rem;
+                                            text-shadow:0px 3px 3px rgba(220, 104, 125, .35);
+                                            writing-mode: vertical-lr;
+                                            text-align: justify;
+                                            text-align-last: justify;
+                                        }
+                                        &:nth-child(2){
+                                            position: absolute;
+                                            left: 1.54rem;
+                                            top: 0;
+                                            bottom: 0;
+                                            margin: auto;
+                                            width: 3.49rem;
+                                            height: 1.61rem;
+                                            font-size: .2rem;
+                                            color: #ff4a6a;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content:space-between;
+                                            word-wrap: break-word;
+                                            word-break: break-all;
+                                            overflow: hidden;
+                                            >p{
+                                                &:nth-child(1){
+                                                    font-size: .43rem;
+                                                    font-family: "方正汉真广标";
+                                                }
+                                            }
+                                        }
+                                        
+                                    
+                                    } 
+                                    >a{
+                                        display: inline-block;
+                                        position: absolute;
+                                        right: .2rem;
+                                        bottom: .36rem;
+                                        width: 1.16rem;
+                                        height: .57rem;
+                                        background: url('../images/decoration_01.png') no-repeat;
+                                        background-size: cover;
+                                        z-index: 10;
+                                    }
+                                }
+                                &.yingpiao2{
+                                    width:5.85rem;
+                                    height:2.46rem;
+                                    background: url('../images/li_02.png') no-repeat;
+                                    background-size: cover;
+                                     position: relative;
+                                    >div{
+                                        &:nth-child(1){
+                                            position: absolute;
+                                            left: .35rem;
+                                            top: .52rem;
+                                            height: 1.33rem;
+                                            word-wrap: break-word; 
+                                            color: #fff;
+                                            font-size: .36rem;
+                                            text-shadow:0px 3px 3px rgba(39, 150, 21, .35);    
+                                            text-align: justify;
+                                            text-align-last: justify;
+                                            writing-mode: vertical-lr;
+                                        }
+                                        &:nth-child(2){
+                                            position: absolute;
+                                            left: 1.53rem;
+                                            top: .44rem;
+                                            width: 3.48rem;
+                                            height: 1.54rem;
+                                            font-size: .2rem;
+                                            color: #62a8f4;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            word-wrap: break-word;
+                                            word-break: break-all;
+                                            overflow: hidden;
+                                            >p{
+                                                &:nth-child(1){
+                                                    font-size: .43rem;
+                                                    font-family: "方正汉真广标";
+                                                }
+                                            }
+                                        }
+                                   
+                                       
+                                    } 
+                                    >a{
+                                        display: inline-block;
+                                        position: absolute;
+                                        right: .2rem;
+                                        bottom: .36rem;
+                                        width: 1.16rem;
+                                        height: .57rem;
+                                        background: url('../images/decoration_02.png') no-repeat;
+                                        background-size: cover;
+                                        z-index: 10;
+                                    }
+                                }
+                                &.shipin2{
+                                    width:5.79rem;
+                                    height:2.43rem;
+                                    background: url('../images/li_03.png') no-repeat;
+                                    background-size: cover;
+                                     position: relative;
+                                    >div{
+                                        &:nth-child(1){
+                                            position: absolute;
+                                            left: .35rem;
+                                            top: .52rem;
+                                            height: 1.33rem;
+                                            word-wrap: break-word; 
+                                            color: #fff;
+                                            font-size: .36rem;
+                                            text-shadow:0px 3px 3px rgba(251, 140, 95, .42);    
+                                            text-align: justify;
+                                            text-align-last: justify;
+                                            writing-mode: vertical-lr;
+                                        }
+                                        &:nth-child(2){
+                                            position: absolute;
+                                            left: 1.53rem;
+                                            top: .44rem;
+                                            width: 3.48rem;
+                                            height: 1.54rem;
+                                            font-size: .2rem;
+                                            color: #ff9d4f;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            word-wrap: break-word;
+                                            word-break: break-all;
+                                            overflow: hidden;
+                                            >p{
+                                                &:nth-child(1){
+                                                    font-size: .43rem;
+                                                    font-family: "方正汉真广标";
+                                                }
+                                            }
+                                        }
+                                   
+                                       
+                                    } 
+                                    >a{
+                                        display: inline-block;
+                                        position: absolute;
+                                        right: .2rem;
+                                        bottom: .36rem;
+                                        width: 1.16rem;
+                                        height: .57rem;
+                                        background: url('../images/decoration_03.png') no-repeat;
+                                        background-size: cover;
+                                        z-index: 10;
+                                    } 
+                                }
+                            }
+                        }
+                    }
+                    >a{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        display: inline-block;
+                        width: 6.67rem;
+                        height: 1.15rem;
+                        background: url('../images/return.png') no-repeat;
+                        background-size: cover;
+                    }
+                }
+              
+            }
+          
+        }
+        section.used{
+            display: none;
+            padding-bottom: .63rem;
+            >div{
+                &:nth-child(1){
+                    width: 7.5rem;
+                    height: 1.5rem;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    padding: .66rem 0 .12rem;
+                    box-sizing: border-box;
+                    >span{
+                        display: inline-block;
+                        width: 3.90rem;
+                        height: 1.01rem;
+                        background: url('../images/my_title.png') no-repeat;
+                        background-size: cover;
+                    }
+                   
+                }
+                &:nth-child(2){
+                    width: 7.5rem;
+                    height: 12.11rem;
+                    background: url('../images/di_01.png') no-repeat;
+                    background-size: cover;
+                    position: relative;                    
+                    >div{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: .2rem;
+                        margin: auto;
+                        width: 6.29rem;
+                        height: 10.4rem;
+                        margin: 0 auto;
+                        border-radius: .6rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        >ul{
+                            height: 9.8rem;
+                            overflow-y: scroll;
+                            >li{
+                                width: 5.8rem;
+                                font-size: .24rem;
+                                color: #333;
+                                line-height: .5rem;
+                                text-align: justify;
+                            }
+                        }
+                    }
+                    >a{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        display: inline-block;
+                        width: 6.67rem;
+                        height: 1.15rem;
+                        background: url('../images/return.png') no-repeat;
+                        background-size: cover;
+                    }
+                }
+              
+            }
+          
+        }
+    
+        // 弹窗
+        section.pop{
+            position: fixed;
+            top: 1.4rem;
+            width: 5.5rem;
+            z-index: 200;
+            left: 0;
+            right: 0;
+            margin: auto;
+            // 分享
+            &.share{
+                display: none;
+                top: 0;
+                >div{
+                    width: 6.3rem;
+                    height: 1.62rem;
+                    background: url('../images/share_01.png') no-repeat;
+                    background-size: cover;
+                    margin: 0 auto;
+                }    
+            }
+            // 活动规则
+            &.rule{
+                display: none;
+                width: 6.37rem;
+                height: 8.01rem;
+                border-radius: .44rem;
+                background-color: #ffd393;
+                >div{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    margin: auto;
+                    bottom: 0;
+                    width: 6.07rem;
+                    height: 7.73rem;
+                    border: solid .03rem #fff;
+                    box-sizing: border-box;
+                    border-radius: .44rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    color: #be592c;
+                    >p{
+                        font-size: .47rem;
+                        font-family: "方正汉真广标";
+                    }
+                    >div{
+                        width: 5.43rem;
+                        height: 6.4rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        >ul{
+                            width: 5.43rem;
+                            height: 6.05rem;
+                            overflow-y: scroll;
+                            >li{
+                                line-height: .5rem;
+                                text-align: justify;
+                            }
+                        } 
+                    }
+                  
+                }
+                >a{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -1.15rem;
+                    margin:  auto;
+                    display: inline-block;
+                    width: .65rem;
+                    height: .65rem;
+                    background: url('../images/close.png') no-repeat;
+                    background-size: cover;
+                }
+            }
+            // 中奖弹窗
+            &.firstprize{
+                display: none;
+                width: 6.3rem;
+                height: 3.09rem;
+                border-radius: .42rem;
+                background-color: #ff9393;
+                >div{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    margin: auto;
+                    bottom: 0;
+                    width: 6.14rem;
+                    height: 2.89rem;
+                    border: solid .04rem #fff;
+                    box-sizing: border-box;
+                    border-radius: .42rem;
+                    >div{
+                        display: flex;
+                        align-items: center;
+                        >p{
+                            &:nth-child(1){
+                                position: relative;
+                                top: -.3rem;
+                                width: 2.59rem;
+                                height: 2.87rem;
+                                background: url('../images/first_01.png') no-repeat;
+                                background-size: cover;
+                            }
+                            &:nth-child(2){
+                                display: flex;
+                                flex-direction: column;
+                                color: #fff;
+                                font-size: .26rem;
+                                width: 2.31rem;
+                                >span{
+                                    &:nth-child(1){
+                                        font-family: "方正汉真广标"; 
+                                        font-size: .45rem;   
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                >a{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -1.15rem;
+                    margin:  auto;
+                    display: inline-block;
+                    width: .65rem;
+                    height: .65rem;
+                    background: url('../images/close.png') no-repeat;
+                    background-size: cover;
+                }
+            }
+            // 没中奖
+            &.unprize{
+                display: none;
+                width: 6.3rem;
+                height: 3.09rem;
+                border-radius: .42rem;
+                background-color: #93d5ff;
+                >div{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    margin: auto;
+                    bottom: 0;
+                    width: 6.14rem;
+                    height: 2.89rem;
+                    border: solid .04rem #fff;
+                    box-sizing: border-box;
+                    border-radius: .42rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    >p{
+                        &:nth-child(1){
+                            width:1.96rem;
+                            height: 1.55rem;
+                            background: url('../images/first_02.png') no-repeat;
+                            background-size: cover;
+                        }
+                        &:nth-child(2){
+                            display: flex;
+                            flex-direction: column;
+                            color: #fff;
+                            font-family: "方正汉真广标"; 
+                            font-size: .45rem; 
+                          >span{
+                              &:nth-child(1){
+                                  margin-bottom: .18rem;
+                              }
+                          }
+                        }
+                    }
+                }
+                >a{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -1.15rem;
+                    margin:  auto;
+                    display: inline-block;
+                    width: .65rem;
+                    height: .65rem;
+                    background: url('../images/close.png') no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+        /* 遮罩层 */
+        section.mask{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.8);
+            z-index: 100;
+        }
+}
+* { touch-action: pan-y; } 

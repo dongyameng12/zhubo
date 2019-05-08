@@ -1,0 +1,1023 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "方正汉真广标";
+  src: url("../font/方正汉真广标.woff2") format("woff2"), url("../font/方正汉真广标.woff") format("woff"), url("../font/方正汉真广标.ttf") format("truetype"), url("../font/方正汉真广标.eot") format("embedded-opentype"), url("../font/方正汉真广标.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: url('../images/qita_bg.png') no-repeat;
+  background-size: cover;
+  font-family: '微软雅黑';
+  /* 遮罩层 */
+}
+html section.recode,
+body section.recode {
+  width: 100%;
+  min-height: 100%;
+  background: #ff7b8c;
+  box-sizing: border-box;
+}
+html section.recode > div:nth-child(1),
+body section.recode > div:nth-child(1) {
+  width: 7.5rem;
+  height: 4.6rem;
+  background: url('../images/code_01.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+html section.recode > div:nth-child(2),
+body section.recode > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html section.recode > div:nth-child(2) > div,
+body section.recode > div:nth-child(2) > div {
+  height: 1.13rem;
+  box-sizing: border-box;
+  border: solid .02rem #ff4242;
+  border-radius: .65rem;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 .45rem;
+  margin: .2rem auto 0;
+  width: 6.39rem;
+}
+html section.recode > div:nth-child(2) > div > p,
+body section.recode > div:nth-child(2) > div > p {
+  font-size: .27rem;
+  width: 1.05rem;
+  height: .79rem;
+  line-height: .79rem;
+  border-right: solid .02rem #ff639c;
+  color: #ff639c;
+  text-align: center;
+  padding-right: .22rem;
+  box-sizing: border-box;
+}
+html section.recode > div:nth-child(2) > div > input,
+body section.recode > div:nth-child(2) > div > input {
+  flex: 1;
+  height: .79rem;
+  border: 0;
+  padding-left: .1rem;
+  box-sizing: border-box;
+}
+html section.recode > div:nth-child(2) > p,
+body section.recode > div:nth-child(2) > p {
+  width: 6.17rem;
+  height: .72rem;
+  line-height: .72rem;
+  color: #ff4242;
+}
+html section.recode > div:nth-child(2) > a,
+body section.recode > div:nth-child(2) > a {
+  display: inline-block;
+  width: 6.39rem;
+  height: 1.13rem;
+  background: url('../images/code_02.png') no-repeat;
+  background-size: cover;
+}
+html section.recode > div:nth-child(3),
+body section.recode > div:nth-child(3) {
+  width: 5.66rem;
+  height: 2.56rem;
+  background: url('../images/d_01.png') no-repeat;
+  background-size: cover;
+  margin: .45rem auto;
+  position: relative;
+}
+html section.recode > div:nth-child(3) > div,
+body section.recode > div:nth-child(3) > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: .54rem;
+  width: 5.45rem;
+  height: 1.84rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html section.recode > div:nth-child(3) > div > ul,
+body section.recode > div:nth-child(3) > div > ul {
+  width: 4.8rem;
+  height: 1.5rem;
+  font-size: .26rem;
+  color: #fff;
+  overflow-y: scroll;
+}
+html section.recode > div:nth-child(3) > div > ul > li,
+body section.recode > div:nth-child(3) > div > ul > li {
+  line-height: .5rem;
+  text-align: justify;
+  text-align-last: justify;
+}
+html section.recode > div:nth-child(4),
+body section.recode > div:nth-child(4) {
+  width: 5.66rem;
+  margin: 0 auto;
+  display: flex;
+}
+html section.recode > div:nth-child(4) > div:nth-child(1),
+body section.recode > div:nth-child(4) > div:nth-child(1) {
+  width: 90px;
+  height: 90px;
+  border: solid 3.5px #ef8938;
+  margin-right: .32rem;
+}
+html section.recode > div:nth-child(4) > div:nth-child(2),
+body section.recode > div:nth-child(4) > div:nth-child(2) {
+  width: 2rem;
+  height: 1.36rem;
+  background: url('../images/d_02.png') no-repeat;
+  background-size: cover;
+}
+html section.lottery,
+body section.lottery {
+  display: none;
+  min-height: 100%;
+  width: 7.5rem;
+  background: url('../images/turn_bg.png') no-repeat;
+  background-size: cover;
+}
+html section.lottery > div:nth-child(1),
+body section.lottery > div:nth-child(1) {
+  width: 7.5rem;
+  height: 3.6rem;
+  background: url('../images/turn_01.png') no-repeat;
+  background-size: cover;
+}
+html section.lottery > div:nth-child(2),
+body section.lottery > div:nth-child(2) {
+  width: 7.5rem;
+  height: 8rem;
+  background: url('../images/turn_02.png') no-repeat;
+  background-size: cover;
+}
+html section.lottery > div:nth-child(2) > div,
+body section.lottery > div:nth-child(2) > div {
+  margin: 0 auto;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(1),
+body section.lottery > div:nth-child(2) > div:nth-child(1) {
+  width: 6.10rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: .07rem;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(1) > a,
+body section.lottery > div:nth-child(2) > div:nth-child(1) > a {
+  display: inline-block;
+  width: 2.78rem;
+  height: .96rem;
+  background: url('../images/change.png') no-repeat;
+  background-size: cover;
+  font-size: .28rem;
+  color: #fff;
+  font-family: "方正汉真广标";
+  text-align: center;
+  line-height: .91rem;
+  text-shadow: 2px 2px 9px rgba(252, 140, 116, 0.67);
+}
+html section.lottery > div:nth-child(2) > div:nth-child(1) > a:nth-child(1),
+body section.lottery > div:nth-child(2) > div:nth-child(1) > a:nth-child(1) {
+  letter-spacing: .08rem;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(1) > a:nth-child(2) > span,
+body section.lottery > div:nth-child(2) > div:nth-child(1) > a:nth-child(2) > span {
+  margin-right: .1rem;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(2),
+body section.lottery > div:nth-child(2) > div:nth-child(2) {
+  position: relative;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(1),
+body section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 6.42rem;
+  height: 5.48rem;
+  background: url('../images/turntable-bg.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2),
+body section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 1.93rem;
+  height: 1.93rem;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  text-align: center;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img:nth-child(1),
+body section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img:nth-child(1) {
+  width: .75rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0.7rem;
+  z-index: 10;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img:nth-child(2),
+body section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img:nth-child(2) {
+  width: 1.54rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(3),
+body section.lottery > div:nth-child(2) > div:nth-child(3) {
+  width: 6.1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: .25rem;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(3) > a,
+body section.lottery > div:nth-child(2) > div:nth-child(3) > a {
+  display: inline-block;
+  width: 3.11rem;
+  height: 1.32rem;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(3) > a:nth-child(1),
+body section.lottery > div:nth-child(2) > div:nth-child(3) > a:nth-child(1) {
+  background: url('../images/my.png') no-repeat;
+  background-size: cover;
+}
+html section.lottery > div:nth-child(2) > div:nth-child(3) > a:nth-child(2),
+body section.lottery > div:nth-child(2) > div:nth-child(3) > a:nth-child(2) {
+  background: url('../images/tallfriend.png') no-repeat;
+  background-size: cover;
+}
+html section.lottery > div:nth-child(3),
+body section.lottery > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 2.98rem;
+}
+html section.lottery > div:nth-child(3) > div:nth-child(1),
+body section.lottery > div:nth-child(3) > div:nth-child(1) {
+  width: 90px;
+  height: 90px;
+  border: solid 3.5px #ef8938;
+  margin-right: .32rem;
+}
+html section.lottery > div:nth-child(3) > div:nth-child(2),
+body section.lottery > div:nth-child(3) > div:nth-child(2) {
+  width: 4.41rem;
+  height: 1.82rem;
+  background: url('../images/zhubo.png') no-repeat;
+  background-size: cover;
+}
+html section.gift,
+body section.gift {
+  display: none;
+  padding-bottom: .63rem;
+}
+html section.gift > div:nth-child(1),
+body section.gift > div:nth-child(1) {
+  width: 7.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: .66rem 0 .12rem;
+  box-sizing: border-box;
+}
+html section.gift > div:nth-child(1) > span,
+body section.gift > div:nth-child(1) > span {
+  display: inline-block;
+  width: 3.90rem;
+  height: 1.01rem;
+  background: url('../images/my_title.png') no-repeat;
+  background-size: cover;
+}
+html section.gift > div:nth-child(2),
+body section.gift > div:nth-child(2) {
+  width: 7.5rem;
+  height: 12.11rem;
+  background: url('../images/my_01.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.gift > div:nth-child(2) > div,
+body section.gift > div:nth-child(2) > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: .2rem;
+  margin: auto;
+  width: 6.29rem;
+  height: 10.4rem;
+  margin: 0 auto;
+  border-radius: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html section.gift > div:nth-child(2) > div > ul,
+body section.gift > div:nth-child(2) > div > ul {
+  height: 9.8rem;
+  overflow-y: scroll;
+}
+html section.gift > div:nth-child(2) > div > ul > li.jingdong,
+body section.gift > div:nth-child(2) > div > ul > li.jingdong {
+  width: 5.8rem;
+  height: 2.41rem;
+  background: url('../images/li_01.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.gift > div:nth-child(2) > div > ul > li.jingdong > div:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.jingdong > div:nth-child(1) {
+  position: absolute;
+  left: .35rem;
+  top: .52rem;
+  height: 1.33rem;
+  word-wrap: break-word;
+  color: #fff;
+  font-size: .36rem;
+  text-shadow: 0px 3px 3px rgba(220, 104, 125, 0.35);
+  writing-mode: vertical-lr;
+  text-align: justify;
+  text-align-last: justify;
+}
+html section.gift > div:nth-child(2) > div > ul > li.jingdong > div:nth-child(2),
+body section.gift > div:nth-child(2) > div > ul > li.jingdong > div:nth-child(2) {
+  position: absolute;
+  left: 1.54rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 3.49rem;
+  height: 1.61rem;
+  font-size: .2rem;
+  color: #ff4a6a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html section.gift > div:nth-child(2) > div > ul > li.jingdong > div:nth-child(2) > p:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.jingdong > div:nth-child(2) > p:nth-child(1) {
+  font-size: .43rem;
+  font-family: "方正汉真广标";
+}
+html section.gift > div:nth-child(2) > div > ul > li.jingdong > a,
+body section.gift > div:nth-child(2) > div > ul > li.jingdong > a {
+  display: inline-block;
+  position: absolute;
+  right: .2rem;
+  bottom: .36rem;
+  width: 1.16rem;
+  height: .57rem;
+  background: url('../images/decoration_01.png') no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+html section.gift > div:nth-child(2) > div > ul > li.yingpiao,
+body section.gift > div:nth-child(2) > div > ul > li.yingpiao {
+  width: 5.85rem;
+  height: 2.46rem;
+  background: url('../images/li_02.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.gift > div:nth-child(2) > div > ul > li.yingpiao > div:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.yingpiao > div:nth-child(1) {
+  position: absolute;
+  left: .35rem;
+  top: .52rem;
+  height: 1.33rem;
+  word-wrap: break-word;
+  color: #fff;
+  font-size: .36rem;
+  text-shadow: 0px 3px 3px rgba(39, 150, 21, 0.35);
+  text-align: justify;
+  text-align-last: justify;
+  writing-mode: vertical-lr;
+}
+html section.gift > div:nth-child(2) > div > ul > li.yingpiao > div:nth-child(2),
+body section.gift > div:nth-child(2) > div > ul > li.yingpiao > div:nth-child(2) {
+  position: absolute;
+  left: 1.53rem;
+  top: .44rem;
+  width: 3.48rem;
+  height: 1.54rem;
+  font-size: .2rem;
+  color: #62a8f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html section.gift > div:nth-child(2) > div > ul > li.yingpiao > div:nth-child(2) > p:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.yingpiao > div:nth-child(2) > p:nth-child(1) {
+  font-size: .43rem;
+  font-family: "方正汉真广标";
+}
+html section.gift > div:nth-child(2) > div > ul > li.yingpiao > a,
+body section.gift > div:nth-child(2) > div > ul > li.yingpiao > a {
+  display: inline-block;
+  position: absolute;
+  right: .2rem;
+  bottom: .36rem;
+  width: 1.16rem;
+  height: .57rem;
+  background: url('../images/decoration_02.png') no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+html section.gift > div:nth-child(2) > div > ul > li.shipin,
+body section.gift > div:nth-child(2) > div > ul > li.shipin {
+  width: 5.79rem;
+  height: 2.43rem;
+  background: url('../images/li_03.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.gift > div:nth-child(2) > div > ul > li.shipin > div:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.shipin > div:nth-child(1) {
+  position: absolute;
+  left: .35rem;
+  top: .52rem;
+  height: 1.33rem;
+  word-wrap: break-word;
+  color: #fff;
+  font-size: .36rem;
+  text-shadow: 0px 3px 3px rgba(251, 140, 95, 0.42);
+  text-align: justify;
+  text-align-last: justify;
+  writing-mode: vertical-lr;
+}
+html section.gift > div:nth-child(2) > div > ul > li.shipin > div:nth-child(2),
+body section.gift > div:nth-child(2) > div > ul > li.shipin > div:nth-child(2) {
+  position: absolute;
+  left: 1.53rem;
+  top: .44rem;
+  width: 3.48rem;
+  height: 1.54rem;
+  font-size: .2rem;
+  color: #ff9d4f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html section.gift > div:nth-child(2) > div > ul > li.shipin > div:nth-child(2) > p:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.shipin > div:nth-child(2) > p:nth-child(1) {
+  font-size: .43rem;
+  font-family: "方正汉真广标";
+}
+html section.gift > div:nth-child(2) > div > ul > li.shipin > a,
+body section.gift > div:nth-child(2) > div > ul > li.shipin > a {
+  display: inline-block;
+  position: absolute;
+  right: .2rem;
+  bottom: .36rem;
+  width: 1.16rem;
+  height: .57rem;
+  background: url('../images/decoration_03.png') no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+html section.gift > div:nth-child(2) > div > ul > li.huafei,
+body section.gift > div:nth-child(2) > div > ul > li.huafei {
+  width: 5.82rem;
+  height: 2.45rem;
+  background: url('../images/li_04.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(1) {
+  position: absolute;
+  left: .35rem;
+  top: .52rem;
+  height: 1.33rem;
+  word-wrap: break-word;
+  color: #fff;
+  font-size: .36rem;
+  text-shadow: 0px 3px 3px rgba(220, 104, 125, 0.35);
+  writing-mode: vertical-lr;
+  text-align: justify;
+  text-align-last: justify;
+}
+html section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2),
+body section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) {
+  width: 3.5rem;
+  height: 1.4rem;
+  position: absolute;
+  top: .44rem;
+  left: 1.7rem;
+  color: #f55d78;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+html section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) > p:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) > p:nth-child(1) {
+  font-weight: bolder;
+}
+html section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) > p:nth-child(1) > span:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) > p:nth-child(1) > span:nth-child(1) {
+  font-size: .91rem;
+}
+html section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) > p:nth-child(1) > span:nth-child(2),
+body section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) > p:nth-child(1) > span:nth-child(2) {
+  font-size: .46rem;
+  margin: 0 .3rem 0 0;
+}
+html section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) > p:nth-child(1) > span:nth-child(3),
+body section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+  font-size: .3rem;
+}
+html section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) > p:nth-child(2),
+body section.gift > div:nth-child(2) > div > ul > li.huafei > div:nth-child(2) > p:nth-child(2) {
+  width: 2.58rem;
+  font-size: .2rem;
+  width: 2.54rem;
+  text-align: right;
+}
+html section.gift > div:nth-child(2) > div > ul > li.jingdong2,
+body section.gift > div:nth-child(2) > div > ul > li.jingdong2 {
+  width: 5.8rem;
+  height: 2.41rem;
+  background: url('../images/li_01.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.gift > div:nth-child(2) > div > ul > li.jingdong2 > div:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.jingdong2 > div:nth-child(1) {
+  position: absolute;
+  left: .35rem;
+  top: .52rem;
+  height: 1.33rem;
+  word-wrap: break-word;
+  color: #fff;
+  font-size: .36rem;
+  text-shadow: 0px 3px 3px rgba(220, 104, 125, 0.35);
+  writing-mode: vertical-lr;
+  text-align: justify;
+  text-align-last: justify;
+}
+html section.gift > div:nth-child(2) > div > ul > li.jingdong2 > div:nth-child(2),
+body section.gift > div:nth-child(2) > div > ul > li.jingdong2 > div:nth-child(2) {
+  position: absolute;
+  left: 1.54rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 3.49rem;
+  height: 1.61rem;
+  font-size: .2rem;
+  color: #ff4a6a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+html section.gift > div:nth-child(2) > div > ul > li.jingdong2 > div:nth-child(2) > p:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.jingdong2 > div:nth-child(2) > p:nth-child(1) {
+  font-size: .43rem;
+  font-family: "方正汉真广标";
+}
+html section.gift > div:nth-child(2) > div > ul > li.jingdong2 > a,
+body section.gift > div:nth-child(2) > div > ul > li.jingdong2 > a {
+  display: inline-block;
+  position: absolute;
+  right: .2rem;
+  bottom: .36rem;
+  width: 1.16rem;
+  height: .57rem;
+  background: url('../images/decoration_01.png') no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+html section.gift > div:nth-child(2) > div > ul > li.yingpiao2,
+body section.gift > div:nth-child(2) > div > ul > li.yingpiao2 {
+  width: 5.85rem;
+  height: 2.46rem;
+  background: url('../images/li_02.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.gift > div:nth-child(2) > div > ul > li.yingpiao2 > div:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.yingpiao2 > div:nth-child(1) {
+  position: absolute;
+  left: .35rem;
+  top: .52rem;
+  height: 1.33rem;
+  word-wrap: break-word;
+  color: #fff;
+  font-size: .36rem;
+  text-shadow: 0px 3px 3px rgba(39, 150, 21, 0.35);
+  text-align: justify;
+  text-align-last: justify;
+  writing-mode: vertical-lr;
+}
+html section.gift > div:nth-child(2) > div > ul > li.yingpiao2 > div:nth-child(2),
+body section.gift > div:nth-child(2) > div > ul > li.yingpiao2 > div:nth-child(2) {
+  position: absolute;
+  left: 1.53rem;
+  top: .44rem;
+  width: 3.48rem;
+  height: 1.54rem;
+  font-size: .2rem;
+  color: #62a8f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+html section.gift > div:nth-child(2) > div > ul > li.yingpiao2 > div:nth-child(2) > p:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.yingpiao2 > div:nth-child(2) > p:nth-child(1) {
+  font-size: .43rem;
+  font-family: "方正汉真广标";
+}
+html section.gift > div:nth-child(2) > div > ul > li.yingpiao2 > a,
+body section.gift > div:nth-child(2) > div > ul > li.yingpiao2 > a {
+  display: inline-block;
+  position: absolute;
+  right: .2rem;
+  bottom: .36rem;
+  width: 1.16rem;
+  height: .57rem;
+  background: url('../images/decoration_02.png') no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+html section.gift > div:nth-child(2) > div > ul > li.shipin2,
+body section.gift > div:nth-child(2) > div > ul > li.shipin2 {
+  width: 5.79rem;
+  height: 2.43rem;
+  background: url('../images/li_03.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.gift > div:nth-child(2) > div > ul > li.shipin2 > div:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.shipin2 > div:nth-child(1) {
+  position: absolute;
+  left: .35rem;
+  top: .52rem;
+  height: 1.33rem;
+  word-wrap: break-word;
+  color: #fff;
+  font-size: .36rem;
+  text-shadow: 0px 3px 3px rgba(251, 140, 95, 0.42);
+  text-align: justify;
+  text-align-last: justify;
+  writing-mode: vertical-lr;
+}
+html section.gift > div:nth-child(2) > div > ul > li.shipin2 > div:nth-child(2),
+body section.gift > div:nth-child(2) > div > ul > li.shipin2 > div:nth-child(2) {
+  position: absolute;
+  left: 1.53rem;
+  top: .44rem;
+  width: 3.48rem;
+  height: 1.54rem;
+  font-size: .2rem;
+  color: #ff9d4f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+html section.gift > div:nth-child(2) > div > ul > li.shipin2 > div:nth-child(2) > p:nth-child(1),
+body section.gift > div:nth-child(2) > div > ul > li.shipin2 > div:nth-child(2) > p:nth-child(1) {
+  font-size: .43rem;
+  font-family: "方正汉真广标";
+}
+html section.gift > div:nth-child(2) > div > ul > li.shipin2 > a,
+body section.gift > div:nth-child(2) > div > ul > li.shipin2 > a {
+  display: inline-block;
+  position: absolute;
+  right: .2rem;
+  bottom: .36rem;
+  width: 1.16rem;
+  height: .57rem;
+  background: url('../images/decoration_03.png') no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+html section.gift > div:nth-child(2) > a,
+body section.gift > div:nth-child(2) > a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: inline-block;
+  width: 6.67rem;
+  height: 1.15rem;
+  background: url('../images/return.png') no-repeat;
+  background-size: cover;
+}
+html section.used,
+body section.used {
+  display: none;
+  padding-bottom: .63rem;
+}
+html section.used > div:nth-child(1),
+body section.used > div:nth-child(1) {
+  width: 7.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: .66rem 0 .12rem;
+  box-sizing: border-box;
+}
+html section.used > div:nth-child(1) > span,
+body section.used > div:nth-child(1) > span {
+  display: inline-block;
+  width: 3.90rem;
+  height: 1.01rem;
+  background: url('../images/my_title.png') no-repeat;
+  background-size: cover;
+}
+html section.used > div:nth-child(2),
+body section.used > div:nth-child(2) {
+  width: 7.5rem;
+  height: 12.11rem;
+  background: url('../images/di_01.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.used > div:nth-child(2) > div,
+body section.used > div:nth-child(2) > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: .2rem;
+  margin: auto;
+  width: 6.29rem;
+  height: 10.4rem;
+  margin: 0 auto;
+  border-radius: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html section.used > div:nth-child(2) > div > ul,
+body section.used > div:nth-child(2) > div > ul {
+  height: 9.8rem;
+  overflow-y: scroll;
+}
+html section.used > div:nth-child(2) > div > ul > li,
+body section.used > div:nth-child(2) > div > ul > li {
+  width: 5.8rem;
+  font-size: .24rem;
+  color: #333;
+  line-height: .5rem;
+  text-align: justify;
+}
+html section.used > div:nth-child(2) > a,
+body section.used > div:nth-child(2) > a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: inline-block;
+  width: 6.67rem;
+  height: 1.15rem;
+  background: url('../images/return.png') no-repeat;
+  background-size: cover;
+}
+html section.pop,
+body section.pop {
+  position: fixed;
+  top: 1.4rem;
+  width: 5.5rem;
+  z-index: 200;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+html section.pop.share,
+body section.pop.share {
+  display: none;
+  top: 0;
+}
+html section.pop.share > div,
+body section.pop.share > div {
+  width: 6.3rem;
+  height: 1.62rem;
+  background: url('../images/share_01.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+html section.pop.rule,
+body section.pop.rule {
+  display: none;
+  width: 6.37rem;
+  height: 8.01rem;
+  border-radius: .44rem;
+  background-color: #ffd393;
+}
+html section.pop.rule > div,
+body section.pop.rule > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  width: 6.07rem;
+  height: 7.73rem;
+  border: solid .03rem #fff;
+  box-sizing: border-box;
+  border-radius: .44rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #be592c;
+}
+html section.pop.rule > div > p,
+body section.pop.rule > div > p {
+  font-size: .47rem;
+  font-family: "方正汉真广标";
+}
+html section.pop.rule > div > div,
+body section.pop.rule > div > div {
+  width: 5.43rem;
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html section.pop.rule > div > div > ul,
+body section.pop.rule > div > div > ul {
+  width: 5.43rem;
+  height: 6.05rem;
+  overflow-y: scroll;
+}
+html section.pop.rule > div > div > ul > li,
+body section.pop.rule > div > div > ul > li {
+  line-height: .5rem;
+  text-align: justify;
+}
+html section.pop.rule > a,
+body section.pop.rule > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.15rem;
+  margin: auto;
+  display: inline-block;
+  width: .65rem;
+  height: .65rem;
+  background: url('../images/close.png') no-repeat;
+  background-size: cover;
+}
+html section.pop.firstprize,
+body section.pop.firstprize {
+  display: none;
+  width: 6.3rem;
+  height: 3.09rem;
+  border-radius: .42rem;
+  background-color: #ff9393;
+}
+html section.pop.firstprize > div,
+body section.pop.firstprize > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  width: 6.14rem;
+  height: 2.89rem;
+  border: solid .04rem #fff;
+  box-sizing: border-box;
+  border-radius: .42rem;
+}
+html section.pop.firstprize > div > div,
+body section.pop.firstprize > div > div {
+  display: flex;
+  align-items: center;
+}
+html section.pop.firstprize > div > div > p:nth-child(1),
+body section.pop.firstprize > div > div > p:nth-child(1) {
+  position: relative;
+  top: -0.3rem;
+  width: 2.59rem;
+  height: 2.87rem;
+  background: url('../images/first_01.png') no-repeat;
+  background-size: cover;
+}
+html section.pop.firstprize > div > div > p:nth-child(2),
+body section.pop.firstprize > div > div > p:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: .26rem;
+  width: 2.31rem;
+}
+html section.pop.firstprize > div > div > p:nth-child(2) > span:nth-child(1),
+body section.pop.firstprize > div > div > p:nth-child(2) > span:nth-child(1) {
+  font-family: "方正汉真广标";
+  font-size: .45rem;
+}
+html section.pop.firstprize > a,
+body section.pop.firstprize > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.15rem;
+  margin: auto;
+  display: inline-block;
+  width: .65rem;
+  height: .65rem;
+  background: url('../images/close.png') no-repeat;
+  background-size: cover;
+}
+html section.pop.unprize,
+body section.pop.unprize {
+  display: none;
+  width: 6.3rem;
+  height: 3.09rem;
+  border-radius: .42rem;
+  background-color: #93d5ff;
+}
+html section.pop.unprize > div,
+body section.pop.unprize > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  width: 6.14rem;
+  height: 2.89rem;
+  border: solid .04rem #fff;
+  box-sizing: border-box;
+  border-radius: .42rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html section.pop.unprize > div > p:nth-child(1),
+body section.pop.unprize > div > p:nth-child(1) {
+  width: 1.96rem;
+  height: 1.55rem;
+  background: url('../images/first_02.png') no-repeat;
+  background-size: cover;
+}
+html section.pop.unprize > div > p:nth-child(2),
+body section.pop.unprize > div > p:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: "方正汉真广标";
+  font-size: .45rem;
+}
+html section.pop.unprize > div > p:nth-child(2) > span:nth-child(1),
+body section.pop.unprize > div > p:nth-child(2) > span:nth-child(1) {
+  margin-bottom: .18rem;
+}
+html section.pop.unprize > a,
+body section.pop.unprize > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.15rem;
+  margin: auto;
+  display: inline-block;
+  width: .65rem;
+  height: .65rem;
+  background: url('../images/close.png') no-repeat;
+  background-size: cover;
+}
+html section.mask,
+body section.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+* {
+  touch-action: pan-y;
+}
