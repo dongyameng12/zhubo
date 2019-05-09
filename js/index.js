@@ -14,6 +14,15 @@
 $(function() {  
     FastClick.attach(document.body);  
 })
+// 输入法聚焦
+$('#inputexchange').on('focus',function () {
+    var bodyname = document.querySelector('#inputexchange');
+    bodyname.scrollTop = bodyname.scrollHeight; 
+})
+// 软键盘顶起来解决问题
+$('#inputexchange').on('blur',function () {
+    window.scroll(0,0)
+})
 $(document).ready(function () {
     // 用于生成二维码
     var classname, idname
