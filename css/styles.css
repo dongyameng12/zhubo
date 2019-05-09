@@ -9,8 +9,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background: url('../images/qita_bg.png') no-repeat;
-  background-size: cover;
   font-family: '微软雅黑';
   /* 遮罩层 */
 }
@@ -18,7 +16,14 @@ html section.recode,
 body section.recode {
   width: 100%;
   min-height: 100%;
-  background: #ff7b8c;
+  background: -webkit-radial-gradient(circle, #ff95a3, #ff7b8c);
+  /* Safari 5.1 - 6.0 */
+  background: -o-radial-gradient(circle, #ff95a3, #ff7b8c);
+  /* Opera 11.6 - 12.0 */
+  background: -moz-radial-gradient(circle, #ff95a3, #ff7b8c);
+  /* Firefox 3.6 - 15 */
+  background: radial-gradient(circle, #ff95a3, #ff7b8c);
+  /* 标准的语法 */
   box-sizing: border-box;
 }
 html section.recode > div:nth-child(1),
@@ -118,7 +123,6 @@ html section.recode > div:nth-child(3) > div > ul > li,
 body section.recode > div:nth-child(3) > div > ul > li {
   line-height: .5rem;
   text-align: justify;
-  text-align-last: justify;
 }
 html section.recode > div:nth-child(4),
 body section.recode > div:nth-child(4) {
@@ -209,8 +213,8 @@ body section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
 }
 html section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2),
 body section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
-  width: 1.93rem;
-  height: 1.93rem;
+  width: 2.33rem;
+  height: 2.33rem;
   position: absolute;
   margin: auto;
   top: 0;
@@ -227,12 +231,13 @@ body section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > 
   left: 0;
   right: 0;
   margin: auto;
-  top: 0.7rem;
+  bottom: 0;
+  top: 0;
   z-index: 10;
 }
 html section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img:nth-child(2),
 body section.lottery > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img:nth-child(2) {
-  width: 1.54rem;
+  width: 2.33rem;
   position: absolute;
   left: 0;
   right: 0;
@@ -288,6 +293,10 @@ html section.gift,
 body section.gift {
   display: none;
   padding-bottom: .63rem;
+  width: 100%;
+  min-height: 100%;
+  background: url('../images/qita_bg.png') no-repeat;
+  background-size: cover;
 }
 html section.gift > div:nth-child(1),
 body section.gift > div:nth-child(1) {
@@ -735,7 +744,10 @@ body section.gift > div:nth-child(2) > a {
 html section.used,
 body section.used {
   display: none;
-  padding-bottom: .63rem;
+  width: 100%;
+  min-height: 100%;
+  background: url('../images/qita_bg.png') no-repeat;
+  background-size: cover;
 }
 html section.used > div:nth-child(1),
 body section.used > div:nth-child(1) {
@@ -744,15 +756,13 @@ body section.used > div:nth-child(1) {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: .66rem 0 .12rem;
-  box-sizing: border-box;
 }
 html section.used > div:nth-child(1) > span,
 body section.used > div:nth-child(1) > span {
   display: inline-block;
   width: 3.90rem;
   height: 1.01rem;
-  background: url('../images/my_title.png') no-repeat;
+  background: url('../images/di_title.png') no-repeat;
   background-size: cover;
 }
 html section.used > div:nth-child(2),
@@ -807,9 +817,10 @@ body section.used > div:nth-child(2) > a {
 html section.pop,
 body section.pop {
   position: fixed;
-  top: 1.4rem;
   width: 5.5rem;
   z-index: 200;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -830,6 +841,7 @@ body section.pop.share > div {
 html section.pop.rule,
 body section.pop.rule {
   display: none;
+  top: 1.4rem;
   width: 6.37rem;
   height: 8.01rem;
   border-radius: .44rem;
@@ -891,6 +903,46 @@ body section.pop.rule > a {
   background: url('../images/close.png') no-repeat;
   background-size: cover;
 }
+html section.pop.commonbg,
+body section.pop.commonbg {
+  display: none;
+  width: 6.30rem;
+  height: 3.08rem;
+  border-radius: .42rem;
+  background-color: #ffd393;
+}
+html section.pop.commonbg > div,
+body section.pop.commonbg > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  width: 6.14rem;
+  height: 2.88rem;
+  border: solid .03rem #fff;
+  box-sizing: border-box;
+  border-radius: .42rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #be592c;
+}
+html section.pop.commonbg > a,
+body section.pop.commonbg > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.15rem;
+  margin: auto;
+  display: inline-block;
+  width: .65rem;
+  height: .65rem;
+  background: url('../images/close.png') no-repeat;
+  background-size: cover;
+}
 html section.pop.firstprize,
 body section.pop.firstprize {
   display: none;
@@ -918,8 +970,8 @@ body section.pop.firstprize > div > div {
   display: flex;
   align-items: center;
 }
-html section.pop.firstprize > div > div > p:nth-child(1),
-body section.pop.firstprize > div > div > p:nth-child(1) {
+html section.pop.firstprize > div > div > p,
+body section.pop.firstprize > div > div > p {
   position: relative;
   top: -0.3rem;
   width: 2.59rem;
@@ -927,18 +979,26 @@ body section.pop.firstprize > div > div > p:nth-child(1) {
   background: url('../images/first_01.png') no-repeat;
   background-size: cover;
 }
-html section.pop.firstprize > div > div > p:nth-child(2),
-body section.pop.firstprize > div > div > p:nth-child(2) {
+html section.pop.firstprize > div > div > div,
+body section.pop.firstprize > div > div > div {
   display: flex;
   flex-direction: column;
   color: #fff;
   font-size: .26rem;
   width: 2.31rem;
 }
-html section.pop.firstprize > div > div > p:nth-child(2) > span:nth-child(1),
-body section.pop.firstprize > div > div > p:nth-child(2) > span:nth-child(1) {
+html section.pop.firstprize > div > div > div > p:nth-child(1),
+body section.pop.firstprize > div > div > div > p:nth-child(1) {
   font-family: "方正汉真广标";
   font-size: .45rem;
+}
+html section.pop.firstprize > div > div > div > p:nth-child(2),
+body section.pop.firstprize > div > div > div > p:nth-child(2) {
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: 3rem;
 }
 html section.pop.firstprize > a,
 body section.pop.firstprize > a {

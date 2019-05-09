@@ -150,7 +150,8 @@ $(document).ready(function () {
         if (isture) return; // 如果在执行就退出
         isture = true; // 标志为 在执行
         if (playnum <= 0) { //当抽奖次数为0的时候执行
-            alert("没有次数了");
+            showMask();
+            $('#nochange').show();
             $('.playnum').html(0);//次数显示为0  
             isture = false;
         } else { //还有次数就执行
@@ -224,7 +225,10 @@ $(document).ready(function () {
     })
     // 测试
     $('.test2').on('click',function(){
-        playnum = 9;  
+        $('.test2').css('color','red')
+        playnum = 9; 
+        $('#playbtn').attr('src','./images/playbtn1.png') 
+        $('.playnum').text(playnum);
     })
     // 点击遮罩层关闭分享（测试用）
     $('.mask').on('click', function () {
