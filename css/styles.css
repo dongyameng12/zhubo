@@ -185,9 +185,10 @@ body section.recode > div:nth-child(4) {
 }
 html section.recode > div:nth-child(4) > div:nth-child(1),
 body section.recode > div:nth-child(4) > div:nth-child(1) {
-  width: 90px;
-  height: 90px;
-  border: solid 3.5px #ef8938;
+  width: 1.94rem;
+  height: 1.94rem;
+  background: url('../images/wx_code.png') no-repeat;
+  background-size: cover;
   margin-right: .32rem;
 }
 html section.recode > div:nth-child(4) > div:nth-child(2),
@@ -330,9 +331,10 @@ body section.lottery > div:nth-child(3) {
 }
 html section.lottery > div:nth-child(3) > div:nth-child(1),
 body section.lottery > div:nth-child(3) > div:nth-child(1) {
-  width: 90px;
-  height: 90px;
-  border: solid 3.5px #ef8938;
+  width: 1.94rem;
+  height: 1.94rem;
+  background: url('../images/wx_code.png') no-repeat;
+  background-size: cover;
   margin-right: .32rem;
 }
 html section.lottery > div:nth-child(3) > div:nth-child(2),

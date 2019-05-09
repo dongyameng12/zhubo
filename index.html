@@ -13,9 +13,7 @@
     <script src="js/jquery-1.10.1.min.js"></script>
     <script src="js/jquery.rotate.min.js"></script>
     <script type="text/javascript" src="js/utf.js"></script>
-    <script type="text/javascript" src="js/jquery.qrcode.js"></script>
     <script src="js/fastclick.js"></script>
-    <script src="js/html2canvas.min.js"></script>
     <script src="js/imgLoader.js"></script>
     <script>
         imgLoader([
@@ -50,7 +48,7 @@
             'images/turn_01.png',
             'images/turn_02.png',
             'images/turntable-bg.png',
-            'images/code_tu.png',
+            'images/wx_code.png',
             'images/zhubo.png',
             'font/方正汉真广标.woff2',
             'font/方正汉真广标.woff',
@@ -62,7 +60,6 @@
             $('.loader_info').html('Loading ' + (parseInt(percentT)) + '%');
             $('.loader_progress')[0].style.width = percentT + '%';
             if (percentage == 1) {
-                generateImage('qrcodefirst', 'picfirst');
                 $('.loader').remove();
                 $('.recode').show();
             }
@@ -101,9 +98,8 @@
             </div>
         </div>
         <div>
-                <div>
-                    <div class="qrcodefirst" id="picfirst"></div>
-                </div>
+            <!--二维码  -->
+            <div></div>
             <div></div>
         </div>
     </section>
@@ -130,10 +126,7 @@
             </div>
         </div>
         <div>
-            <div>
-                <!-- 二维码 -->
-                <div class="qrcode" id="pic"></div>
-            </div>
+            <div></div>
             <div></div>
         </div>
     </section>
@@ -305,52 +298,6 @@
     </section>
     <!-- 遮罩层 -->
     <section class="mask" id="mask"></section>
-    <script>
-        //参数分别是二维码的class，和id
-          function erweima_pic (classname, idname) {
-              var getimg_length = $('.'+classname).children('img').length
-              if (getimg_length == 0) {
-                  var copyDom = $('#'+idname).children('canvas')[0]
-                  var width = copyDom.width;
-                  var height = copyDom.height;
-                  var scale = 2;
-                  html2canvas(document.getElementById(idname),{
-                      dpi:window.devicePixelRatio*2,
-                      scale:scale,
-                      width:width,
-                      height:height,
-                  }).then(function(canvas){
-                      var imgUrl = canvas.toDataURL();
-                      $('#'+idname).css({'width':width,'height':height,'margin':'0 auto'})
-                      $('#'+idname).html('<img class="cavas_img" src="'+imgUrl+'" style="width:'+width+'px;height:'+height+'px">');
-                  })
-              }
-          }
-          // 二维码
-          function erweima (classname){
-              var link = "http://www.baidu.com"     //其中link为需生成二维码的链接
-              $("."+classname).qrcode(
-                  {
-                     render : "canvas",    //设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好
-                     text : link,    //扫描二维码后显示的内容,可以直接填一个网址，扫描二维码后自动跳向该链接
-                     width : "90",            // //二维码的宽度
-                     height : "90",              //二维码的高度
-                     background : "#ffffff",       //二维码的后景色
-                     foreground : "#459b98",        //二维码的前景色
-                     src: './images/code_tu.png'             //二维码中间的图片
-              }
-              );
-              
-          }
-          // 生成图片方法
-          function generateImage (classname,idname) {
-              erweima(classname);
-              setTimeout(function () {
-                  // 调用二维码生层图片
-                  erweima_pic(classname,idname);
-              }, 1000);
-          }
-  </script>
 </body>
 </html>
 <script src="js/index.js"></script>

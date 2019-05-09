@@ -38,7 +38,6 @@ $(document).ready(function () {
     // 点击验证（兑换码验证）
    $('#prove').on('click',function(){
         if ($('#inputexchange').val() ==exchange ) {
-            generateImage('qrcode','pic')
             playnum++;
             $('.playnum').html(playnum);//显示还剩下多少次抽奖机会
             $('.recode').hide();
