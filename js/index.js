@@ -15,6 +15,9 @@ $(function() {
     FastClick.attach(document.body);  
 })
 $(document).ready(function () {
+    // 用于生成二维码
+    var classname, idname
+    generateImage('qrcodefirst', 'picfirst');
     // 兑换码
     var exchange = 123;
     var playnum = 0, //初始次数，由后台传入
@@ -27,10 +30,11 @@ $(document).ready(function () {
     // 点击验证（兑换码验证）
    $('#prove').on('click',function(){
         if ($('#inputexchange').val() ==exchange ) {
-        playnum++;
-        $('.playnum').html(playnum);//显示还剩下多少次抽奖机会
-        $('.recode').hide();
-        $('.lottery').show();
+            generateImage('qrcode','pic')
+            playnum++;
+            $('.playnum').html(playnum);//显示还剩下多少次抽奖机会
+            $('.recode').hide();
+            $('.lottery').show();
        } else {
             $('#inputexchange').val('')
             $('#exchangefail').text('*验证失败')
@@ -205,9 +209,39 @@ $(document).ready(function () {
         $(this).parent().parent().hide();
         $('.lottery').show();
     })
-    // 二维码
+// 生成图片方法
+function generateImage (classname,idname) {
+    erweima(classname);
+    setTimeout(function () {
+        // 调用二维码生层图片
+        erweima_pic(classname,idname);
+    },500);
+}
+// 二维码生成图片
+//参数分别是二维码的class，和id
+function erweima_pic (classname, idname) {
+    var getimg_length = $('.'+classname).children('img').length
+    if (getimg_length == 0) {
+        var copyDom = $('#'+idname).children('canvas')[0]
+        var width = copyDom.width;
+        var height = copyDom.height;
+        var scale = 2;
+        html2canvas(document.getElementById(idname),{
+            dpi:window.devicePixelRatio*2,
+            scale:scale,
+            width:width,
+            height:height,
+        }).then(function(canvas){
+            var imgUrl = canvas.toDataURL();
+            $('#'+idname).css({'width':width,'height':height,'margin':'0 auto'})
+            $('#'+idname).html('<img class="cavas_img" src="'+imgUrl+'" style="width:'+width+'px;height:'+height+'px">');
+        })
+    }
+}
+// 二维码
+function erweima (classname){
     var link = "http://www.baidu.com"     //其中link为需生成二维码的链接
-    $(".qrcode").qrcode(
+    $("."+classname).qrcode(
         {
            render : "canvas",    //设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好
            text : link,    //扫描二维码后显示的内容,可以直接填一个网址，扫描二维码后自动跳向该链接
@@ -215,9 +249,13 @@ $(document).ready(function () {
            height : "90",              //二维码的高度
            background : "#ffffff",       //二维码的后景色
            foreground : "#459b98",        //二维码的前景色
-           src: './images/playbtn1.png'             //二维码中间的图片
+           src: './images/code_tu.png'             //二维码中间的图片
        }
     );
+    
+}
+
+ 
     // 关闭按钮
     $('.close').on('click',function(){
         $(this).parent().hide();

@@ -15,11 +15,64 @@
     <script type="text/javascript" src="js/utf.js"></script>
     <script type="text/javascript" src="js/jquery.qrcode.js"></script>
     <script src="js/fastclick.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+    <script>
+        imgLoader([
+            'images/change.png',
+            'images/chou-txt.png',
+            'images/close.png',
+            'images/code_01.png',
+            'images/code_02.png',
+            'images/d_01.png',
+            'images/d_02.png',
+            'images/decoration_01.png',
+            'images/decoration_02.png',
+            'images/decoration_03.png',
+            'images/di_01.png',
+            'images/di_title.png',
+            'images/first_01.png',
+            'images/first_02.png',
+            'images/li_01.png',
+            'images/li_02.png',
+            'images/li_03.png',
+            'images/li_04.png',
+            'images/my_01.png',
+            'images/my_title.png',
+            'images/my.png',
+            'images/playbtn1.png',
+            'images/playbtn2.png',
+            'images/qita_bg.png',
+            'images/return.png',
+            'images/rule.png',
+            'images/share_01.png',
+            'images/turn_bg.png',
+            'images/turn_01.png',
+            'images/turn_02.png',
+            'images/turntable-bg.png',
+            'images/zhubo.png'
+        ], function (percentage) {
+            var percentT = percentage * 100;
+            $('.loader_info').html('Loading ' + (parseInt(percentT)) + '%');
+            $('.loader_progress')[0].style.width = percentT + '%';
+            if (percentage == 1) {
+                $('.loader').remove();
+                $('.recode').show();
+            }
+        });
+    </script>
 </head>
 <body>
     <!-- 测试 -->
     <button style="position: absolute;top: 0;z-index: 100; font-size:.28rem;" class="test1">抽奖码123</button>
     <button style="position: absolute;top: 0.5rem;z-index: 100;font-size:.28rem;" class="test2">多次次抽奖机会</button>
+    <!--loading-->
+    <section class="loader">
+        <div class="loader_info"></div>
+        <div>
+            <div class="loader_progress"></div>
+        </div>
+    </section>
     <!-- 兑换码 -->
     <section class="recode">
         <div></div>
@@ -42,8 +95,8 @@
         </div>
         <div>
                 <div>
-                <div class="qrcode"></div>
-            </div>
+                    <div class="qrcodefirst" id="picfirst"></div>
+                </div>
             <div></div>
         </div>
     </section>
@@ -72,7 +125,7 @@
         <div>
             <div>
                 <!-- 二维码 -->
-                <div class="qrcode"></div>
+                <div class="qrcode" id="pic"></div>
             </div>
             <div></div>
         </div>
@@ -154,7 +207,7 @@
                     </li>
                 </ul>
             </div>
-            <a href="javscript:void(0);" class="return"></a>
+            <a href="javscript:void(0);" class="return">返回主页</a>
         </div>
     </section>
     <!-- 使用说明 -->
@@ -180,7 +233,7 @@
                         <li>使用说明使用说明使用说明使用说明使用说明使用说明使用说明使用说明使用说明使用说明</li>
                     </ul>
                 </div>
-                <a href="javscript:void(0);" class="used_return"></a>
+                <a href="javscript:void(0);" class="used_return">返回</a>
             </div>
     </section>
     <!-- 好友分享 -->
