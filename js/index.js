@@ -179,6 +179,7 @@ $(document).ready(function () {
 
     // 我的奖品
     $('#mypraise').on('click',function(){
+        if (isture) return;
         $('.lottery').hide();
         $('.gift').show();
     })
@@ -203,12 +204,14 @@ $(document).ready(function () {
     })
     // 点击告诉好友
     $('#sendto').on('click',function(){
+        if (isture) return;
         showMask();
         $('.share').show();
     })
 
     // 点击活动规则
     $('.rulebtn').on('click',function(){
+        if (isture) return;
         showMask()
         $('.rule').show();
     })
