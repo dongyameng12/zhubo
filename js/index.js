@@ -26,7 +26,6 @@ $('#inputexchange').on('blur',function () {
 $(document).ready(function () {
     // 用于生成二维码
     var classname, idname
-    generateImage('qrcodefirst', 'picfirst');
     // 兑换码
     var exchange = 123;
     var playnum = 0, //初始次数，由后台传入

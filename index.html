@@ -51,12 +51,18 @@
             'images/turn_02.png',
             'images/turntable-bg.png',
             'images/code_tu.png',
-            'images/zhubo.png'
+            'images/zhubo.png',
+            'font/方正汉真广标.woff2',
+            'font/方正汉真广标.woff',
+            'font/方正汉真广标.ttf',
+            'font/方正汉真广标.eot',
+            'font/方正汉真广标.svg'
         ], function (percentage) {
             var percentT = percentage * 100;
             $('.loader_info').html('Loading ' + (parseInt(percentT)) + '%');
             $('.loader_progress')[0].style.width = percentT + '%';
             if (percentage == 1) {
+                generateImage('qrcodefirst', 'picfirst');
                 $('.loader').remove();
                 $('.recode').show();
             }
